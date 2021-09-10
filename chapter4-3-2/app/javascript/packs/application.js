@@ -9,3 +9,7 @@ import "channels"
 
 Rails.start()
 ActiveStorage.start()
+
+document.getEventListener("turbolinks:load", function() {
+  console.log("turbolinks:load fire")
+})
