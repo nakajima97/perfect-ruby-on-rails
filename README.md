@@ -5,7 +5,7 @@
 ## chapter2
 Ruby on Railsの基本
 ## chapter3
-DB
+DB基本操作
 ## chapter3_db_sample
 複数DB対応方法
 ## chapter4
@@ -20,3 +20,5 @@ Turbolinksによる画面遷移の高速化
 Active Job
 ## chapter5-2
 Active Storage
+## chapter5-3
+Action Mailer
