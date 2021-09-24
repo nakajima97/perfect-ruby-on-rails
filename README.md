@@ -2,6 +2,8 @@
 書籍「パーフェクトRuby on Rails」内に書かれているコードを実際に写経した履歴を残すためのリポジトリ
 
 # ディレクトリ概要
+## awesome_events
+書籍6章以降の内容を写経した
 ## chapter2
 Ruby on Railsの基本
 ## chapter3
