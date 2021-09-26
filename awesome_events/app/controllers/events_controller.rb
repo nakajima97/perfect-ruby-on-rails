@@ -1,4 +1,10 @@
 class EventsController < ApplicationController
+  skip_before_action :authenticate, only: :show
+
+  def show
+    @event = Event.find(params[:id])
+  end
+
   def new
     @event = current_user.created_events.build
   end
@@ -15,7 +21,7 @@ class EventsController < ApplicationController
 
   def event_params
     params.require(:event).permit(
-      :name, :place, :content, :start_at, :end_At
+      :name, :place, :content, :start_at, :end_at
     )
   end
 end
