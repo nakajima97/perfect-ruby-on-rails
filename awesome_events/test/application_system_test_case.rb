@@ -16,7 +16,8 @@ Capybara.register_driver :remote_chrome do |app|
 end
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
-  # driven_by :selenium, using: :headless_chrome, screen_size: [1400, 1400]
+  include SignInHelper
+
   driven_by :remote_chrome
   Capybara.server_host = IPSocket.getaddress(Socket.gethostname)
   Capybara.server_port = 3000
