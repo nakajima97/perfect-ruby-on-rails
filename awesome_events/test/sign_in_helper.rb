@@ -4,11 +4,8 @@ module SignInHelper
     OmniAuth.config.add_mock(
       user.provider,
       uid: user.uid,
-      info: {
-        nickname: user.name,
-        image: user.image_url
-      }
-    )
+      info: { nickname: user.name,
+              image: user.image_url })
     visit root_url
     click_on "Githubでログイン"
     @current_user = user
